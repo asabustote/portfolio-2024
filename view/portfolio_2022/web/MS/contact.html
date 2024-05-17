@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/a6e64d04f0.js" crossorigin="anonymous"></script>
+  <title>Material Sweets</title>
+</head>
+<body>
+  <section class="content">
+    <header class="header">
+      <div class="header__inner">
+        <div class="header-utilities">
+          <div class="header-utilities__logo">
+            <img src="images/logo.png" alt="画像：ロゴ">
+          </div>
+          <!-- /.header-utilities__logo -->
+          <div class="header-utilities__level1-heading">
+             <h1 class="header-utilities__title">
+              Material&nbsp;Sweets
+              </h1>
+              <p class="header--heading__text">
+                伝統と素材に拘った季節フルーツを使用したスイーツのお店です。
+              </p>
+          </div>
+          <!-- /.header-utilities__level1-heading -->
+       </div> 
+       <!-- /.header-utilities -->
+       <div class="toggle" onclick="toggleMenu();">            
+       </div>
+       <!-- /.toggle -->
+      </div>
+      <!-- /.header__inner -->
+      <figure class="banner__img-wrapper">
+        <img class="banner__img" src="images/blanc_head.jpg" alt="画像：ヘッダーのバナー">
+      </figure>
+      <nav>
+        <ul  class="header-nav">
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="index.html">
+              HOME
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="shop.html">
+              店舗案内
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="sweets.html">
+              スイーツ
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="material.html">
+              素材について
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="sale.html">
+              タイムセール
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="contact.html">
+              お問い合わせ
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="lvel2-heading">
+        <div class="lvel2-heading__inner">
+          <h2 class="lvel2-heading__title">
+            お問い合わせ
+          </h2>
+            <p>
+              当店の商品について質問やご意見については
+              下記フォームよりお問い合わせください。<br>
+              また、任意ですがアンケート内容にも協力お願いしたします。
+          </p>
+        </div>
+        <!-- /.lvel2-heading__inner -->
+      </div>
+      <!-- /.lvel2-heading -->
+      <form name="form1" method="get" accept="">
+        <div class="horizonal-table horizonal-table--md-scroll">
+          <table class="horizonal-table__inner">
+            <tbody class="horizotnal-table__body">
+              <tr class="horizotnal-table__row">
+                <th class="horizotnal-table__header">
+                  氏名（必須）
+                </th>
+                <td class="horizotnal-table__text">
+                  <input type="text" name="name" size="30">
+                </td>
+              </tr>
+              <tr class="horizotnal-table__row">
+                <th class="horizotnal-table__header">
+                  E-mail
+                </th>
+                <td class="horizotnal-table__text">
+                  <input type="text" name="email" size="30">
+                </td>
+              </tr>
+              <tr class="horizotnal-table__row">
+                <th class="horizotnal-table__header">
+                  電話番号（任意）
+                </th>
+                <td class="horizotnal-table__text">
+                  <input type="tel" name="tel" size="30">
+                </td>
+              </tr>
+              <tr class="horizotnal-table__row">
+                <th class="horizotnal-table__header">
+                  アンケート（任意）
+                </th>
+                <td class="horizotnal-table__text">
+                  <input type="radio" name="sex" value="men" checked="checked">
+                  <input type="radio" name="sex" value="female">
+                </td>
+              </tr>
+              <tr class="horizotnal-table__row">
+                <th class="horizotnal-table__header">
+                  来店回数
+                </th>
+                <td class="horizotnal-table__text">
+                  <input type="radio" name="reaseon" value="1">何度もきたことがある
+                  <input type="radio" name="reaseon" value="2">来店した事はある
+                  <input type="radio" name="reaseon" value="3">来店した事はない
+                </td>
+              </tr>
+              <tr class="horizotnal-table__row">
+                <th class="horizotnal-table__header">
+                  当店で好きなスイーツ
+                </th>
+                <td class="horizotnal-table__text">
+                  <input type="checkbox" name="favorite" value="1">モンブラン
+                  <input type="checkbox" name="favorite" value="2">苺のショートケーキ
+                  <input type="checkbox" name="favorite" value="3">マカロン
+                  <input type="checkbox" name="favorite" value="4">パウンドケーキ
+                  <input type="checkbox" name="favorite" value="5">その他
+                </td>
+              </tr>
+              <tr class="horizotnal-table__row">
+                <th class="horizotnal-table__header">
+                  用件（必須）
+                </th>
+                <td class="horizotnal-table__text">
+                  <select name="inquiry">
+                    <option value="">選択してください</option>
+                    <option value="Sweets">スイーツについて</option>
+                    <option value="reservation">予約販売について</option>
+                    <option value="request">当店への要望・ご意見</option>
+                    <option value="othere">その他</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="button">
+          <input class="btn" type="submit" value="送信">
+          <input class="btn" type="reset" value="取り消し">
+        </div>
+        <!-- /.horizonal-table .horizonal-table--md-scroll-->
+      </form>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer__inner">
+          <nav>
+            <ul  class="footer-nav">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="index.html">
+                  HOME
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="shop.html">
+                  店舗案内
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="sweets.html">
+                  スイーツ
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="material.html">
+                  素材について
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="sale.html">
+                  タイムセール
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="contact.html">
+                  お問い合わせ
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- /.footer__inner -->
+        <div class="footer footer--border-top-gray">
+          <div class="footer__inner">
+            <small class="footer-copyright">
+              ©︎&nbsp;2022&nbsp;Material&nbsp;Sweets
+            </small>
+          </div>
+          <!-- /.footer__inner -->
+        </div>
+        <!-- /.footer footer--border-top-gray -->
+      </div>
+      <!-- /.footer -->
+    </footer>
+  </section>
+  <script type="text/javascript">
+    function toggleMenu(){
+      var menuToggle = document.querySelector('.toggle');
+      // var navigation = document.querySelector('.navigation');
+      menuToggle.classList.toggle('active');
+      // navigation.classList.toggle('active');
+    };
+  </script>
+</body>
+</html>

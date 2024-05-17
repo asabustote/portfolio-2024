@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lancelot&family=Noto+Serif+JP:wght@200;400;700&display=swap" rel="stylesheet">
+  <title>Material Sweets</title>
+</head>
+<body>
+  <section class="content">
+    <header class="header">
+      <div class="header__inner">
+        <div class="header-utilities">
+          <div class="header-utilities__logo">
+            <img src="images/logo.png" alt="画像：ロゴ">
+          </div>
+          <!-- /.header-utilities__logo -->
+          <div class="header-utilities__level1-heading">
+             <h1 class="header-utilities__title">
+              Material&nbsp;Sweets
+              </h1>
+              <p class="header--heading__text">
+                伝統と素材に拘った季節フルーツを使用したスイーツのお店です。
+              </p>
+          </div>
+          <!-- /.header-utilities__level1-heading -->
+       </div> 
+       <!-- /.header-utilities -->
+       <div class="toggle" onclick="toggleMenu();">            
+       </div>
+       <!-- /.toggle -->
+      </div>
+      <!-- /.header__inner -->
+      <figure class="banner__img-wrapper">
+        <img class="banner__img" src="images/blanc_head.jpg" alt="画像：ヘッダーのバナー">
+      </figure>
+      <nav>
+        <ul  class="header-nav">
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="index.html">
+              HOME
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="shop.html">
+              店舗案内
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="sweets.html">
+              スイーツ
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="material.html">
+              素材について
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="sale.html">
+              タイムセール
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="contact.html">
+              お問い合わせ
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="lvel2-heading">
+        <div class="lvel2-heading__inner">
+          <h2 class="lvel2-heading__title">
+            店舗紹介
+          </h2>
+          <p class="lvel2__text">
+            JR中央線 東京メトロ市ヶ谷駅から徒歩3分程度です。<br>
+            お気軽にお越しください。
+          </p>
+        </div>
+        <!-- /.lvel2-heading__inner -->
+      </div>
+      <!-- /.lvel2-heading -->
+     <div class="horizonal-table horizonal-table--md-scroll">
+      <table class="horizonal-table__inner">
+        <tbody class="horizotnal-table__body">
+          <tr class="horizotnal-table__row">
+            <th class="horizotnal-table__header">
+              店名
+            </th>
+            <td class="horizotnal-table__text">
+              Material Sweets
+            </td>
+          </tr>
+          <tr class="horizotnal-table__row">
+            <th class="horizotnal-table__header">
+              住所
+            </th>
+            <td class="horizotnal-table__text">
+              〒102-8377&nbsp;東京都千代田区五番町5番地
+            </td>
+          </tr>
+          <tr class="horizotnal-table__row">
+            <th class="horizotnal-table__header">
+              営業時間
+            </th>
+            <td class="horizotnal-table__text">
+              AM10:00～PM7:00
+            </td>
+          </tr>
+          <tr class="horizotnal-table__row">
+            <th class="horizotnal-table__header">
+              定休日
+            </th>
+            <td class="horizotnal-table__text">
+              火曜日（他不定休有）
+            </td>
+          </tr>
+          <tr class="horizotnal-table__row">
+            <th class="horizotnal-table__header">
+              電話番号
+            </th>
+            <td class="horizotnal-table__text">
+              03-9999-8888
+            </td>
+          </tr>
+          <tr class="horizotnal-table__row">
+            <th class="horizotnal-table__header">
+              アクセス
+            </th>
+            <td class="horizotnal-table__text">
+              JR総武線、東京メトロ有楽町線・南北線、都営新宿線 市ヶ谷駅 徒歩3分
+            </td>
+          </tr>
+        </tbody>
+      </table>
+     </div>
+     <!-- /.horizonal-table .horizonal-table--md-scroll-->
+     <div class="lvel2-heading">
+      <div class="lvel2-heading__inner">
+        <h2 class="lvel2-heading__title">
+          店舗の地図
+        </h2>
+      </div>
+      <!-- /.lvel2-heading__inner -->
+    </div>
+    <!-- /.lvel2-heading -->
+    <div class="accces">
+      <iframe class="accces__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.4789385618715!2d139.73340591525903!3d35.689830080192166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c60e1df2b67%3A0x294731ea6c667d91!2s5%20Gobanch%C5%8D%2C%20Chiyoda%20City%2C%20Tokyo%20102-0076!5e0!3m2!1sen!2sjp!4v1657401461670!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- /.map -->
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer__inner">
+          <nav>
+            <ul  class="footer-nav">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="index.html">
+                  HOME
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="shop.html">
+                  店舗案内
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="sweets.html">
+                  スイーツ
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="material.html">
+                  素材について
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="sale.html">
+                  タイムセール
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="contact.html">
+                  お問い合わせ
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- /.footer__inner -->
+        <div class="footer footer--border-top-gray">
+          <div class="footer__inner">
+            <small class="footer-copyright">
+              ©︎&nbsp;2022&nbsp;Material&nbsp;Sweets
+            </small>
+          </div>
+          <!-- /.footer__inner -->
+        </div>
+        <!-- /.footer footer--border-top-gray -->
+      </div>
+      <!-- /.footer -->
+    </footer>
+  </section>
+  <script type="text/javascript">
+    function toggleMenu(){
+      var menuToggle = document.querySelector('.toggle');
+      // var navigation = document.querySelector('.navigation');
+      menuToggle.classList.toggle('active');
+      // navigation.classList.toggle('active');
+    };
+  </script>
+</body>
+</html>

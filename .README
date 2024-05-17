@@ -1,0 +1,19 @@
+データベースのユーザー設定に関しては下記ユーザを想定しています。
+
+使用データベース:mysql
+データベース名:cafe
+ユーザー名:test_user
+パスワード:test
+
+-----------------------------------------------------------
+/mapで下記コマンドを実行するとマップの機能が有効化する
+サーバーを起動する
+uvicorn map:app --reload
+
+※上記はFast APIを利用した機能です。
+ もし、Fast APIをインストールしていない場合は、下記コマンドを実行してください。
+ 
+ pip install fastapi
+ pip install "uvicorn[standard]"
+
+ https://fastapi.tiangolo.com/ja/#_6より

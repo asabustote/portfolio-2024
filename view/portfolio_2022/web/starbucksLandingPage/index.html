@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Starbucks Website Landing Page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- <section>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__utilites">
+        <div class="header-logo">
+          <a href="#" class="header-logo__link">
+            <figure class="header-logo__image-wrapper">
+              <img src="images/logo.png">
+            </figure>
+          </a>
+        </div>
+        /.header-logo
+        <ul class="header-nav">
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Home</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Menu</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">What's&nbsp;New</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      /.header__utilites
+    </div>
+    /.header__inner
+  </header>
+  <div class="content">
+    <div class="textBox">
+      <h2>
+        It's&nbsp;not&nbsp;just&nbsp;Coffee<br>
+        It's&nbsp;<span>Starbucks</span>
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, sed animi doloribus eaque saepe possimus sit, ipsum reprehenderit magni eveniet error mollitia, id dolores? Inventore neque porro dignissimos corporis. Repellat?
+        <a href="#">
+          Learn More
+        </a>
+      </p>
+    </div>
+    /.textBox
+  </div>
+  /.content
+</section> -->
+
+  <section>
+    <div class="circle"></div>
+    <!-- /.circle -->
+  <header>
+      <a href="#" class="logo">
+        <img src="images/logo.png">
+      </a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <!-- /.toggle -->
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">What's New</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+  </header>
+  <div class="content">
+    <div class="textBox">
+      <h2>
+        It's just Coffee<br>
+        <span>Starbucks</span>
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores magnam sed cumque ducimus voluptatibus ullam suscipit, ut modi est, dolores amet laudantium vero iusto labore. Reprehenderit iusto aliquam iure deserunt.
+      </p>
+      <a href="#">Laern More</a>
+    </div>
+    <!-- /.textBox -->
+    <div class="imgBox">
+      <img class="starbucks" src="images/img1.png">
+    </div>
+    <!-- /.imgBox -->
+  </div>
+  <!-- /.content -->
+  <ul class="thumb">
+    <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png');changeCircleColor('#017143')"></li>
+    <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png');changeCircleColor('#eb7495')"></li>
+    <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png');changeCircleColor('#d752b1')"></li>
+  </ul>
+  <ul class="sci">
+    <li><a href="#"><img src="images/facebook.png"></a></li>
+    <li><a href="#"><img src="images/twitter.png"></a></li>
+    <li><a href="#"><img src="images/instagram.png"></a></li>
+  </ul>
+  </section>
+  <script type="text/javascript">
+    function imgSlider(anything){
+      document.querySelector('.starbucks').src = anything;
+    }
+
+    function changeCircleColor(color){
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+    }
+
+    function toggleMenu(){
+      var menuToggle = document.querySelector('.toggle');
+      var navigation = document.querySelector('.navigation');
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+    };
+  </script>
+</body>
+</html>

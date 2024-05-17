@@ -1,0 +1,2 @@
+サーバーを起動する
+uvicorn map:app --reload
